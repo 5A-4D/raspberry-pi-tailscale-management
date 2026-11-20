@@ -1,0 +1,22 @@
+# Fictional target. Populate a private copy and verify its host key independently.
+Host pi-management
+    HostName 192.0.2.20
+    Port 22
+    User pi
+    HostKeyAlias pi-management
+    IdentityFile ~/.ssh/id_ed25519_pi_management
+    UserKnownHostsFile ~/.ssh/known_hosts.pi-management
+    StrictHostKeyChecking yes
+    UpdateHostKeys no
+    IdentitiesOnly yes
+    PreferredAuthentications publickey
+    PubkeyAuthentication yes
+    BatchMode yes
+    PasswordAuthentication no
+    KbdInteractiveAuthentication no
+    ForwardAgent no
+    ForwardX11 no
+    ClearAllForwardings yes
+    PermitLocalCommand no
+    RequestTTY no
+    ConnectTimeout 10

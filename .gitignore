@@ -1,0 +1,14 @@
+state/
+reports/
+secrets/
+build/
+__pycache__/
+*.pyc
+.venv*/
+.env
+*.key
+*.pem
+*.pub
+known_hosts*
+id_ed25519*
+*.log
